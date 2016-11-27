@@ -25,23 +25,33 @@ import java.util.List;
  *
  * @see br.ufg.inf.es.saep.sandbox.dominio.regra.Regra
  */
-public class Funcao {
+public abstract class Funcao {
 
+    /**
+     * Identificador único da função
+     */
+    private String descricao;
     /**
      * Identificador do resultado da função
      * empregado em uma expressão.
      */
-    private String variavel;
+    private String resultado;
 
-    /**
-     * Código único da função.
-     */
-    private int codigo;
+    public String getDescricao() {
+        return descricao;
+    }
 
-    /**
-     * Sequência dos nomes dos argumentos empregados pela função.
-     */
-    private List<String> argumentos;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
+    }
 
     /**
      * Cria uma função.
@@ -50,27 +60,15 @@ public class Funcao {
      *                  da avaliação da função.
      *
      * @param identificador O identificador único da função.
-     * @param parametros Lista de parâmetros empregados pela função.
      */
     public Funcao(final String resultado,
-                  final int identificador,
-                  final List<String> parametros) {
+                  final String identificador) {
 
         if (resultado == null || resultado.isEmpty()) {
             throw new CampoExigidoNaoFornecido("resultado");
         }
 
-        variavel = resultado;
-        codigo = identificador;
-        argumentos = parametros;
-    }
-
-    /**
-     * Recupera o variavel pelo qual o tipo é conhecido.
-     *
-     * @return O variavel do tipo.
-     */
-    public final String getVariavel() {
-        return variavel;
+        this.resultado = resultado;
+        this.descricao = identificador;
     }
 }
