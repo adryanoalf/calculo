@@ -5,10 +5,6 @@
 
 package br.ufg.inf.es.saep.sandbox.dominio;
 
-import br.ufg.inf.es.saep.sandbox.dominio.excecoes.CampoExigidoNaoFornecido;
-
-import java.util.List;
-
 /**
  * Uma função é o meio para realizar algumas operações
  * sobre atributos de um avaliável, cujo resultado é
@@ -51,24 +47,5 @@ public abstract class Funcao {
 
     public void setResultado(String resultado) {
         this.resultado = resultado;
-    }
-
-    /**
-     * Cria uma função.
-     *
-     * @param resultado Nome da variável que guardará o resultado
-     *                  da avaliação da função.
-     *
-     * @param identificador O identificador único da função.
-     */
-    public Funcao(final String resultado,
-                  final String identificador) {
-
-        if (resultado == null || resultado.isEmpty()) {
-            throw new CampoExigidoNaoFornecido("resultado");
-        }
-
-        this.resultado = resultado;
-        this.descricao = identificador;
     }
 }
