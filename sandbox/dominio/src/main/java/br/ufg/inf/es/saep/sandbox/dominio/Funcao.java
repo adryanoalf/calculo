@@ -5,10 +5,6 @@
 
 package br.ufg.inf.es.saep.sandbox.dominio;
 
-import br.ufg.inf.es.saep.sandbox.dominio.excecoes.CampoExigidoNaoFornecido;
-
-import java.util.List;
-
 /**
  * Uma função é o meio para realizar algumas operações
  * sobre atributos de um avaliável, cujo resultado é
@@ -25,52 +21,31 @@ import java.util.List;
  *
  * @see br.ufg.inf.es.saep.sandbox.dominio.regra.Regra
  */
-public class Funcao {
+public abstract class Funcao {
 
+    /**
+     * Identificador único da função
+     */
+    private String descricao;
     /**
      * Identificador do resultado da função
      * empregado em uma expressão.
      */
-    private String variavel;
+    private String resultado;
 
-    /**
-     * Código único da função.
-     */
-    private int codigo;
-
-    /**
-     * Sequência dos nomes dos argumentos empregados pela função.
-     */
-    private List<String> argumentos;
-
-    /**
-     * Cria uma função.
-     *
-     * @param resultado Nome da variável que guardará o resultado
-     *                  da avaliação da função.
-     *
-     * @param identificador O identificador único da função.
-     * @param parametros Lista de parâmetros empregados pela função.
-     */
-    public Funcao(final String resultado,
-                  final int identificador,
-                  final List<String> parametros) {
-
-        if (resultado == null || resultado.isEmpty()) {
-            throw new CampoExigidoNaoFornecido("resultado");
-        }
-
-        variavel = resultado;
-        codigo = identificador;
-        argumentos = parametros;
+    public String getDescricao() {
+        return descricao;
     }
 
-    /**
-     * Recupera o variavel pelo qual o tipo é conhecido.
-     *
-     * @return O variavel do tipo.
-     */
-    public final String getVariavel() {
-        return variavel;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
     }
 }
