@@ -1,3 +1,7 @@
+# Documento de Apoio às regras do Consuni
+
+Drive: https://docs.google.com/document/d/1HThHmuY96b-gOwJ2Y_69kpLTQbSjS4qK6acV0D3Ho3Y/edit#heading=h.np717zaohglw
+
 # SAEP
 Sistema de Apoio à Elaboração de Parecer (SAEP) tem como propósito auxiliar a edição de pareceres de processos de progressão, promoção e avaliação de estágio probatório da Universidade Federal de Goiás (UFG). O SAEP é desenvolvido no contexto da Fábrica de Software do Instituto de Informática (UFG). 
 
