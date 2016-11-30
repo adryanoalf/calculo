@@ -1,7 +1,3 @@
-# Documento de Apoio às regras do Consuni
-
-Drive: https://docs.google.com/document/d/1HThHmuY96b-gOwJ2Y_69kpLTQbSjS4qK6acV0D3Ho3Y/edit#heading=h.np717zaohglw
-
 # SAEP
 Sistema de Apoio à Elaboração de Parecer (SAEP) tem como propósito auxiliar a edição de pareceres de processos de progressão, promoção e avaliação de estágio probatório da Universidade Federal de Goiás (UFG). O SAEP é desenvolvido no contexto da Fábrica de Software do Instituto de Informática (UFG). 
 
@@ -18,6 +14,7 @@ Documentos disponíveis:
 * [Visão](https://docs.google.com/document/d/1ElwL9lT6KFeUVl4KvWKZOGROEtLa7Lb2h6L3fLITtyg/edit#heading=h.np717zaohglw) (conceitos de operação)
 * [API](http://docs.saep.apiary.io/) (API preliminar de acesso ao SAEP)
 * Arquitetura [preliminar](https://docs.google.com/document/d/1pHi74guX42sezCPkEQsQVLkYQOy0Q0Ryk7h1OlD1lyU/edit)
+* [Regras do Consuni](https://docs.google.com/document/d/1HThHmuY96b-gOwJ2Y_69kpLTQbSjS4qK6acV0D3Ho3Y/edit#heading=h.np717zaohglw)
 
 <br />
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. 
