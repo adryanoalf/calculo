@@ -48,4 +48,12 @@ public abstract class Funcao {
     public void setResultado(String resultado) {
         this.resultado = resultado;
     }
+    
+    /**
+     * Este método será utilizado por todas as classes irão herdar de Funcao,
+     * o objetivo é que cada classe tem uma unica responsabilidade, de forma que
+     * para o calculo dos resultados das funcoes, sempre será possível chamar
+     * p método cálculo
+     */
+    public abstract float calculo();
 }
